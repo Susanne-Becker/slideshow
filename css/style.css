@@ -1,0 +1,93 @@
+body {
+    background-color: powderblue;
+}
+
+h1{
+    font-size: 30px;
+    margin-left: 18em;
+}
+
+p{
+    max-width: 50em;
+    margin-left: 17.4em;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 30em;
+    width: 50em;
+    margin-top: 3.3em;
+    margin-left: 15em;
+}
+
+li {
+    list-style: none;
+    position: absolute;
+}
+
+img {
+    height: 35em;
+    width: 50em;
+    opacity: 0;
+    visibility: hidden;
+}
+
+input {
+    display: none;
+}
+
+label {
+    background-color: #fff;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    z-index: 10;
+    border-radius: 50%;
+    bottom: 1em;
+}
+
+li:nth-child(1) label {
+    left: 22.5em;
+}
+
+li:nth-child(2) label {
+    left: 24em;
+}
+
+li:nth-child(3) label {
+    left: 25.5em;
+}
+
+li:nth-child(4) label {
+    left: 27em;
+}
+
+li:nth-child(5) label {
+    left: 28.5em;
+}
+
+input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+}
+
+input:checked ~ label {
+    background-color: blueviolet;
+}
+
+.left-arrow, .right-arrow {
+    color: whitesmoke;
+    font-size: 40px;
+    transform: translate(0, -0%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50px;
+    height: 40px;
+    background-color: blueviolet;
+    box-shadow: 2px 2px 2px white;
+}
